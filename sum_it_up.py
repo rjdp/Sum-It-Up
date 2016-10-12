@@ -4,7 +4,7 @@ def get_combiations(length, N, A):
     def map_func(tpl):
         return int(''.join(map(str,tpl)))
     def filter_func(num):
-	   return sum(map(int,list(str(num)))) == N
+        return sum(map(int,list(str(num)))) == N
     num_lists = list(map(map_func, num_lists))
     num_lists = list(filter(filter_func, num_lists))
     return num_lists
